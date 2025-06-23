@@ -1,0 +1,84 @@
+:root {
+  --green-color: #3cb815;
+  --light-green-color: #c0eb7b;
+  --orange-color: #f75f1d;
+  --light-orange-color: #ff7e00;
+  --text-color: #1a2428;
+  --bg-color: #fff;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.heading h1 span {
+  color: var(--green-color);
+}
+.categories {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.categories .categories-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.categories .categories-container .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 0.5rem;
+}
+.categories .categories-container .box img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  object-position: center;
+}
+.categories .categories-container .box h2 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.categories .categories-container .box .bx {
+  padding: 10px;
+  background: var(--green-color);
+  color: var(--bg-color);
+  border-radius: 5rem;
+  margin-top: 2rem;
+  position: absolute;
+  bottom: -8%;
+  display: none;
+}
+.categories .categories-container .box .bx:hover {
+  background: var(--orange-color);
+  transition: 0.2s all linear;
+}
+.categories .categories-container .box:hover .bx {
+  display: block;
+  transition: 0.2s all linear;
+}
+.categories .categories-container .box1 {
+  background: #fef4ea;
+}
+.categories .categories-container .box2 {
+  background: #e9f4e3;
+}
+.categories .categories-container .box3 {
+  background: #faeaea;
+}
+.categories .categories-container .box4 {
+  background: #eeeef9;
+}
+.categories .categories-container .box5 {
+  background: #f7f6d7;
+}
